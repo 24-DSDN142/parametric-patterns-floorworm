@@ -11,6 +11,7 @@ let SquareY =0;//Yvalue of Lilac
 let SquareMx = 0//Xvalue of Marigold
 let SquareMy = 40//Yvalue of Marigold
 
+let lilacColour = colour(157, 127, 245)
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
