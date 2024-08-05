@@ -2,8 +2,8 @@
 
 let SQSI = 20; //Square Size
 
-let SR= 2;//roundedness of squares
-let LSR=4; //roundness of flowerSquares
+let SR= 4;//roundedness of squares
+let LSR=5; //roundness of flowerSquares
 
 let SquareX = 140;//Xvalue of Lilac
 let SquareY =0;//Yvalue of Lilac
@@ -17,15 +17,15 @@ let drawLilac = true; //variable to controll if drawing of Lilac is true
 
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   //pWallpaper.output_mode( GRID_WALLPAPER);
-  pWallpaper.resolution(FIT_TO_SCREEN);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print
+  pWallpaper.resolution(A3);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
   pWallpaper.grid_settings.cell_height = 200;
-  pWallpaper.grid_settings.row_offset  = 100;
+  pWallpaper.grid_settings.row_offset  = 200;
 }
 
 function wallpaper_background() {
@@ -76,7 +76,7 @@ square(SquareX-40,SquareY+20,SQSI,LSR)
 square(SquareX+20,SquareY+20,SQSI,LSR)
 square(SquareX-20,SquareY+20,SQSI,LSR)
 square(SquareX,SquareY+20,SQSI,LSR)
-square(SquareX-40,SquareY+40,SQSI,LSR)
+//square(SquareX-40,SquareY+40,SQSI,LSR)
 
 
 fill(91, 55, 158)//DarkPurp
